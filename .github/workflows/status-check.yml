@@ -3,6 +3,7 @@ on: [push, pull_request]
 
 jobs:
   build:
+    name: CI test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
@@ -11,5 +12,5 @@ jobs:
       - name: Run Tests
         run: |
           echo "Running tests..."
-          sleep 10  # Simulating a test run
+          sleep 5  # Simulating a test run for 5s
           echo "Tests passed!"  
